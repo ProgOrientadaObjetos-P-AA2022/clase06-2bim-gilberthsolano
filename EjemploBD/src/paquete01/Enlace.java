@@ -47,7 +47,7 @@ public class Enlace {
         try{  
             establecerConexion();
             Statement statement = obtenerConexion().createStatement();
-            String data = String.format("INSERT INTO Ciudad (nombre, poblacion) "
+            String data = String.format("INSERT INTO Ciudad (nombre, poblacion) "//codigo sql
                     + "values ('%s', %d)", ciudad.obtenerNombre(), 
                     ciudad.obtenerPoblacion());
             statement.executeUpdate(data);
